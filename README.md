@@ -12,7 +12,7 @@ Registry.
 Build environment for [CKB].
 
 Supported tags and respective `Dockerfile` links:
-  - [`bionic-rustc1.33.0`]
+  - [`bionic-rustc1.34.0`]
 
 Start the docker as follows:
 
@@ -22,7 +22,7 @@ docker run --rm -it \
     --volume "${HOST_DIR}:${DOCKER_DIR}" \
     --volume "rust-registry:/opt/local/cargo/registry" \
     --volume "rust-git:/opt/local/cargo/git" \
-    yangby0cryptape/ckb-build:bionic-rustc1.33.0 \
+    yangby0cryptape/ckb-build:bionic-rustc1.34.0 \
     ${COMMANDS}
 ```
 
@@ -54,5 +54,5 @@ mount it as `workdir` (default is `/ckb`) in the docker container.
 
 [CKB]: https://github.com/nervosnetwork/ckb
 [my-docker-hub-url]: https://hub.docker.com/u/yangby0cryptape/
-[`bionic-rustc1.33.0`]: https://github.com/yangby-cryptape/ckb-dockerfiles/tree/master/ubuntu/bionic/build
+[`bionic-rustc1.34.0`]: https://github.com/yangby-cryptape/ckb-dockerfiles/tree/master/ubuntu/bionic/build
 [`bionic`]: https://github.com/yangby-cryptape/ckb-dockerfiles/tree/master/ubuntu/bionic/run
