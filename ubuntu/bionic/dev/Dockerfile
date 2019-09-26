@@ -1,7 +1,7 @@
 FROM yangby0cryptape/riscv-tools:rv64imac-newlib-20190829 AS builder
 MAINTAINER Boyu Yang <yangby@cryptape.com>
 
-FROM yangby0cryptape/ckb-build:bionic-rustc1.36.0
+FROM yangby0cryptape/ckb-build:bionic-rustc1.38.0
 MAINTAINER Boyu Yang <yangby@cryptape.com>
 
 COPY --from=builder "/opt/riscv" "/opt/riscv"

@@ -1,6 +1,6 @@
 FROM ubuntu:bionic
 
-ENV RUST_VERSION="1.36.0"
+ENV RUST_VERSION="1.38.0"
 
 # The install-prefix for third-party executable files
 ENV INSTALL_PREFIX="/opt"
