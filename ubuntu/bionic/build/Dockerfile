@@ -27,6 +27,8 @@ RUN set -eux; \
         libclang-dev \
         pkg-config \
         libssl-dev \
+# for executables
+        upx-ucl \
         ; \
     \
     apt-get clean; \
