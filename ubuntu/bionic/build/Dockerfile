@@ -27,8 +27,6 @@ RUN set -eux; \
         libclang-dev \
         pkg-config \
         libssl-dev \
-        librocksdb-dev \
-        libsnappy-dev \
         ; \
     \
     apt-get clean; \
@@ -61,11 +59,6 @@ RUN set -eux; \
     rustup component add clippy --toolchain "${RUST_VERSION}"; \
     rustfmt --version; \
     cargo clippy --version;
-
-# Ref: https://github.com/rust-rocksdb/rust-rocksdb/pull/166
-ENV ROCKSDB_LIB_DIR="/usr/lib"
-# pkg-config --variable=libdir snappy
-ENV SNAPPY_LIB_DIR="/usr/lib/x86_64-linux-gnu"
 
 # Default runtime environment
 COPY entrypoint.sh "${INSTALL_PREFIX}/bin/"
