@@ -12,7 +12,7 @@ Registry.
 Build environment for [CKB].
 
 Supported tags and respective `Dockerfile` links:
-  - [`bionic-rustc1.40.0`]
+  - [`bionic-rustc1.41.0`]
 
 Start the docker as follows:
 
@@ -22,7 +22,7 @@ docker run --rm -it \
     --volume "${HOST_DIR}:${DOCKER_DIR}" \
     --volume "rust-registry:/opt/local/cargo/registry" \
     --volume "rust-git:/opt/local/cargo/git" \
-    yangby0cryptape/ckb-build:bionic-rustc1.40.0 \
+    yangby0cryptape/ckb-build:bionic-rustc1.41.0 \
     ${COMMANDS}
 ```
 
@@ -37,7 +37,7 @@ cache files to make `cargo` command faster.
 Development environment for [CKB].
 
 Supported tags and respective `Dockerfile` links:
-  - [`bionic-rustc1.40.0-riscv20190829`]
+  - [`bionic-rustc1.41.0-riscv20190829`]
 
 Start the docker as follows:
 
@@ -47,7 +47,7 @@ docker run --rm -it \
     --volume "${HOST_DIR}:${DOCKER_DIR}" \
     --volume "rust-registry:/opt/local/cargo/registry" \
     --volume "rust-git:/opt/local/cargo/git" \
-    yangby0cryptape/ckb-dev:bionic-rustc1.40.0-riscv20190829 \
+    yangby0cryptape/ckb-dev:bionic-rustc1.41.0-riscv20190829 \
     ${COMMANDS}
 ```
 
@@ -77,6 +77,6 @@ mount it as `workdir` (default is `/ckb`) in the docker container.
 [CKB]: https://github.com/nervosnetwork/ckb
 [my-docker-hub-url]: https://hub.docker.com/u/yangby0cryptape/
 [RISC-V development environment]: https://github.com/yangby-cryptape/riscv-dockerfiles
-[`bionic-rustc1.40.0`]: https://github.com/yangby-cryptape/ckb-dockerfiles/tree/bionic-rustc1.40.0/ubuntu/bionic/build
-[`bionic-rustc1.40.0-riscv20190829`]: https://github.com/yangby-cryptape/ckb-dockerfiles/tree/bionic-rustc1.40.0-riscv20190829/ubuntu/bionic/build
+[`bionic-rustc1.41.0`]: https://github.com/yangby-cryptape/ckb-dockerfiles/tree/bionic-rustc1.41.0/ubuntu/bionic/build
+[`bionic-rustc1.41.0-riscv20190829`]: https://github.com/yangby-cryptape/ckb-dockerfiles/tree/bionic-rustc1.41.0-riscv20190829/ubuntu/bionic/build
 [`bionic`]: https://github.com/yangby-cryptape/ckb-dockerfiles/tree/master/ubuntu/bionic/run
