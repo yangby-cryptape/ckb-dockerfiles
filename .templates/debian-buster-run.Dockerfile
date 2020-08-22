@@ -1,4 +1,5 @@
-FROM ubuntu:bionic
+FROM debian:buster-slim
+MAINTAINER Boyu Yang <yangby@cryptape.com>
 
 # The install-prefix for third-party executable files
 ENV INSTALL_PREFIX="/opt"
@@ -21,8 +22,6 @@ RUN set -eux; \
 # for dependencies
     apt-get install --assume-yes --no-install-recommends \
         libssl1.1 \
-        librocksdb5.8 \
-        libsnappy1v5 \
         ; \
     \
     apt-get clean; \
