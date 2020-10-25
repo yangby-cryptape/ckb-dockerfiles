@@ -12,8 +12,8 @@ Registry.
 Build environment for [CKB].
 
 Supported tags and respective `Dockerfile` links:
-  - [`debian-buster-rust1.45.2`]
-  - [`ubuntu-focal-rust1.45.2`]
+  - [`debian-buster-rust1.46.0`]
+  - [`ubuntu-focal-rust1.46.0`]
 
 Start the docker as follows:
 
@@ -56,7 +56,7 @@ mount it as `workdir` (default is `/ckb`) in the docker container.
 
 [CKB]: https://github.com/nervosnetwork/ckb
 [my-docker-hub-url]: https://hub.docker.com/u/yangby0cryptape/
-[`debian-buster-rust1.45.2`]: debian/buster/build
+[`debian-buster-rust1.46.0`]: debian/buster/build
 [`debian-buster`]: debian/buster/run
-[`ubuntu-focal-rust1.45.2`]: ubuntu/focal/build
+[`ubuntu-focal-rust1.46.0`]: ubuntu/focal/build
 [`ubuntu-focal`]: ubuntu/focal/run
