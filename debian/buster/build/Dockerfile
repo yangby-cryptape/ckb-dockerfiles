@@ -38,7 +38,7 @@ ENV RUSTUP_HOME="${INSTALL_PREFIX}/local/rustup" \
     RUSTUP_VERSION="1.22.1" \
     RUSTUP_SHA256="49c96f3f74be82f4752b8bffcf81961dea5e6e94ce1ccba94435f12e871c3bdb" \
     RUST_ARCH="x86_64-unknown-linux-gnu" \
-    RUST_VERSION="1.46.0"
+    RUST_VERSION="1.47.0"
 ENV PATH="${PATH}:${CARGO_HOME}/bin"
 RUN set -eux; \
     tmpDeps="curl"; \
