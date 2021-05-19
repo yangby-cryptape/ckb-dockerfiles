@@ -1,7 +1,7 @@
 FROM yangby0cryptape/ckb-riscv:debian-buster-riscv-tools-20191209 AS builder
 MAINTAINER Boyu Yang <yangby@cryptape.com>
 
-FROM yangby0cryptape/ckb-build:debian-buster-rust1.47.0
+FROM yangby0cryptape/ckb-build:debian-buster-rust1.51.0
 MAINTAINER Boyu Yang <yangby@cryptape.com>
 
 COPY --from=builder "/opt/riscv" "/opt/riscv"

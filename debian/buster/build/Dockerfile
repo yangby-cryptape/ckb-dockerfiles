@@ -35,10 +35,10 @@ RUN set -eux; \
 # Install rust toolchain
 ENV RUSTUP_HOME="${INSTALL_PREFIX}/local/rustup" \
     CARGO_HOME="${INSTALL_PREFIX}/local/cargo" \
-    RUSTUP_VERSION="1.22.1" \
-    RUSTUP_SHA256="49c96f3f74be82f4752b8bffcf81961dea5e6e94ce1ccba94435f12e871c3bdb" \
+    RUSTUP_VERSION="1.24.2" \
+    RUSTUP_SHA256="6d6d0da8940357eeed733368a6a63fc96e8a1ed1e02fa4c4a60b64b6c66b6057" \
     RUST_ARCH="x86_64-unknown-linux-gnu" \
-    RUST_VERSION="1.47.0"
+    RUST_VERSION="1.51.0"
 ENV PATH="${PATH}:${CARGO_HOME}/bin"
 RUN set -eux; \
     tmpDeps="curl"; \

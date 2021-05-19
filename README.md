@@ -14,8 +14,8 @@ Registry.
 Build environment for [CKB].
 
 Supported tags and respective `Dockerfile` links:
-  - [`debian-buster-rust1.47.0`]
-  - [`ubuntu-focal-rust1.47.0`]
+  - [`debian-buster-rust1.51.0`]
+  - [`ubuntu-focal-rust1.51.0`]
 
 Start the docker as follows:
 
@@ -40,7 +40,7 @@ cache files to make `cargo` command faster.
 Development environment for [CKB].
 
 Supported tags and respective `Dockerfile` links:
-  - [`debian-buster-rust1.47.0-riscv20191209`]
+  - [`debian-buster-rust1.51.0-riscv20191209`]
 
 Start the docker as follows:
 
@@ -150,10 +150,10 @@ Last, enjoy it!
 [RISC-V GNU Compiler Toolchain]: https://github.com/riscv/riscv-gnu-toolchain
 [RISC-V Tools]: https://github.com/riscv/riscv-tools
 [my-docker-hub-url]: https://hub.docker.com/u/yangby0cryptape/
-[`debian-buster-rust1.47.0-riscv20191209`]: debian/buster/dev
-[`debian-buster-rust1.47.0`]: debian/buster/build
+[`debian-buster-rust1.51.0-riscv20191209`]: debian/buster/dev
+[`debian-buster-rust1.51.0`]: debian/buster/build
 [`debian-buster`]: debian/buster/run
 [`debian-buster-riscv-gnu-toolchain-20191209`]: debian/buster/riscv-gnu-toolchain
 [`debian-buster-riscv-tools-20191209`]: debian/buster/riscv-tools
-[`ubuntu-focal-rust1.47.0`]: ubuntu/focal/build
+[`ubuntu-focal-rust1.51.0`]: ubuntu/focal/build
 [`ubuntu-focal`]: ubuntu/focal/run
